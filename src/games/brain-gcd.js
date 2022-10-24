@@ -13,7 +13,7 @@ const startBrainGcdGame = () => {
   const questions = Array.from({ length: 3 }, () => {
     const operand1 = randomIntFromInterval(0, 100);
     const operand2 = randomIntFromInterval(0, 100);
-    return { question: `${operand1} ${operand2}`, correctAnswer: `${getGcd(operand1, operand2)}` };
+    return { question: `${operand1} ${operand2}`, correctAnswer: String(getGcd(operand1, operand2)) };
   });
 
   startGame(questions, 'Find the greatest common divisor of given numbers.');
