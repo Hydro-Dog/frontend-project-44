@@ -11,8 +11,8 @@ const getGcd = (n, m) => {
 
 const startBrainGcdGame = () => {
   const questions = Array.from({ length: 3 }, () => {
-    const operand1 = randomIntFromInterval(0, 100);
-    const operand2 = randomIntFromInterval(0, 100);
+    const operand1 = randomIntFromInterval(0, 20);
+    const operand2 = randomIntFromInterval(0, 20);
     return { question: `${operand1} ${operand2}`, correctAnswer: String(getGcd(operand1, operand2)) };
   });
 

@@ -5,3 +5,11 @@
 
 <a href="https://asciinema.org/a/Hh4NauoOByjPwVSmBwDLQbDNt">brain-even asciinema</a>
 
+<a href="https://asciinema.org/a/XGZnaof4q3wOgjDeCZUUAPVFK">brain-calc asciinema</a>
+
+<a href="https://asciinema.org/a/NBXlo3mmiceZWzqCb722WU92T">brain-gcd asciinema</a>
+
+<a href="https://asciinema.org/a/SVUDX6ga0iAEVUFdLYjDUKxm3">brain-progression asciinema</a>
+
+<a href="https://asciinema.org/a/ZX66Cs44NGIGfaK974x9dNl12">brain-prime asciinema</a>
+
