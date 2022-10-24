@@ -14,7 +14,7 @@
 - make lint
 
 
-To run game tupe into your console one of the commands below:
+To run game type into your bash one of the commands below:
 
 - brain-games
 - brain-even
