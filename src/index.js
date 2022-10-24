@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
-import askUserName from '../utils/askUserName.js';
-import displayWrongAnswerMessage from '../utils/displayWrongAnswerMessage.js';
+import askUserName from './utils/askUserName.js';
+import displayWrongAnswerMessage from './utils/displayWrongAnswerMessage.js';
 
 const requestAnswer = () => readlineSync.question('Your answer:');
 const showQuestion = (question) => {

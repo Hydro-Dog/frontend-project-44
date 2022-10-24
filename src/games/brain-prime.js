@@ -1,5 +1,5 @@
 import randomIntFromInterval from '../utils/randomIntFromInterval.js';
-import startGame from '../components/game-skeleton.js';
+import startGame from '../index.js';
 
 const isPrime = (value) => {
   for (let i = 2, s = Math.sqrt(value); i <= s; i += 1) { if (value % i === 0) return false; }

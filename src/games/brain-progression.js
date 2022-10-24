@@ -1,5 +1,5 @@
 import randomIntFromInterval from '../utils/randomIntFromInterval.js';
-import startGame from '../components/game-skeleton.js';
+import startGame from '../index.js';
 
 const startBrainProgressionGame = () => {
   const questions = Array.from({ length: 3 }, () => {
