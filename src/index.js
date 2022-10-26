@@ -2,11 +2,6 @@ import readlineSync from 'readline-sync';
 import askUserName from './utils/askUserName.js';
 import displayWrongAnswerMessage from './utils/displayWrongAnswerMessage.js';
 
-const requestAnswer = () => readlineSync.question('Your answer:');
-const showQuestion = (question) => {
-  console.log(`Question: ${question}`);
-};
-
 const startGame = (questions, taskText) => {
   const correctAnswersLimit = 3;
   const userName = askUserName();
@@ -14,16 +9,16 @@ const startGame = (questions, taskText) => {
 
   for (let i = 0; i < correctAnswersLimit; i += 1) {
     const { question, correctAnswer } = questions[i];
-    showQuestion(question);
-    const userAnswer = requestAnswer();
+    console.log(`Question: ${question}`);
+    const userAnswer = readlineSync.question('Your answer:');
 
-    if (userAnswer === correctAnswer) {
-      console.log('Correct!');
-    } else {
+    if (userAnswer !== correctAnswer) {
       displayWrongAnswerMessage(userAnswer, correctAnswer, userName);
 
       return;
     }
+
+    console.log('Correct!');
   }
 
   console.log(`Congratulations, ${userName}!`);
